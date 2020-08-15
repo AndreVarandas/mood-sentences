@@ -1,0 +1,46 @@
+{
+  "name": "mood-sentences",
+  "version": "1.0.0",
+  "description": "✨ Mood sentences",
+  "main": "index.js",
+  "scripts": {
+    "commit": "npx git-cz",
+    "test": "jest --config jestconfig.json",
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint --fix --ext .js ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreVarandas/mood-sentences.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AndreVarandas/mood-sentences/issues"
+  },
+  "homepage": "https://github.com/AndreVarandas/mood-sentences#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.2.0",
+    "eslint": "^7.7.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.5",
+    "jest": "^26.4.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:fix && npm run lint",
+      "pre-push": "npm run test"
+    }
+  }
+}
