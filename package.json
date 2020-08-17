@@ -3,6 +3,9 @@
   "version": "0.0.0-development",
   "description": "✨ Mood sentences",
   "main": "src/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "commit": "npx git-cz",
     "test": "jest --config jestconfig.json",
