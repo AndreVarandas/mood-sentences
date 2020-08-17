@@ -1,17 +1,18 @@
 {
   "name": "@varandas/mood-sentences",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "✨ Mood sentences",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "commit": "npx git-cz",
     "test": "jest --config jestconfig.json",
     "lint": "eslint . --ext .js",
-    "lint:fix": "eslint --fix --ext .js ."
+    "lint:fix": "eslint --fix --ext .js .",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AndreVarandas/mood-sentences.git"
+    "url": "https://github.com/AndreVarandas/mood-sentences.git"
   },
   "keywords": [],
   "author": "",
@@ -30,7 +31,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^4.2.5",
-    "jest": "^26.4.0"
+    "jest": "^26.4.0",
+    "semantic-release": "^17.1.1"
   },
   "config": {
     "commitizen": {
@@ -39,7 +41,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint:fix && npm run lint"
+      "pre-commit": "npm run lint:fix && npm run lint",
+      "pre-push": "npm run test"
     }
   }
 }
