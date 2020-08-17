@@ -1,0 +1,30 @@
+{
+    "anger": [
+        "I'm furious",
+        "That really drives me up the wall",
+        "I go bananas",
+        "I want to tear my hair out",
+        "My blood is boiling"
+    ],
+    "excitement": [
+        "I can't believe it",
+        "Im really stoked",
+        "That's fantastic",
+        "How awesome",
+        "I'm very excited"
+    ],
+    "boredom": [
+        "It does nothing for me",
+        "I can't say I find it interesting",
+        "I can’t see what all the fuss is about",
+        "It bores me to tears",
+        "What a bore"
+    ],
+    "happiness": [
+        "I'm very pleased",
+        "I'm over the moon",
+        "I'm on cloud nine",
+        "I'm pleased as a punch",
+        "I'm on top of the world"
+    ]
+}
