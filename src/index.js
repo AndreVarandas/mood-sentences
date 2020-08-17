@@ -25,7 +25,7 @@ const list = {
  *
  * @param {list} mood to use.
  *
- * @throws Will throw if the received mood is not known, undefined or null
+ * @throws Will throw if the received mood is not known, undefined or null.
  *
  * @returns {string} a random sentence for the chosen mood.
  */
